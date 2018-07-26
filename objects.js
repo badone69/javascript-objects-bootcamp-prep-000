@@ -1,14 +1,13 @@
-var playlist = {
-  beatles: "let it be",
-  beachboys: "fun fun fun",
-  jimi: "purple haze",
+
+
+var playlist = new Object({keys: '0'});
+
+function updatePlaylist(playlist, artistName, songTitle) {
+  playlist[artistName] = songTitle
+  return playlist
 }
 
-function updatePlaylist(playlist, artistName, songTitle){
-  return Object.assign(playlist, artistName, songTitle);
-}
-
-function removeFromPLaylist(playlist, artistName){
-  delete playlist.artistName;
-  return playlist;
+function removeFromPlaylist(playlist, artistName) {
+  delete playlist[artistName]
+  return playlist
 }
