@@ -1,4 +1,5 @@
 var playlist = {
   beatles: "let it be",
-  beachboys: 
+  beachboys: "fun fun fun",
+  jimi: "purple haze",
 }
